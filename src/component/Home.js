@@ -1,13 +1,11 @@
 import React from 'react'
-import Content from './Content'
-import IceCream from './IceCream'
+import FirstScreen from './fisrtScreen/FirstScreen'
 
 function Home() {
     return (
         <div>
-            <h1>home</h1>
-            <Content />
-            <IceCream />
+            {/* if user is not logged in  */}
+            <FirstScreen />
         </div>
     )
 }

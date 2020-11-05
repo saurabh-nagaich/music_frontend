@@ -1,0 +1,32 @@
+.contanier {
+  display: flex;
+  height: 65vh;
+  padding-top: 80px;
+  // background: blue;
+  box-shadow: 1000px #00000029;
+}
+.partetion {
+  width: 50%;
+  padding: 15px;
+  //   height: 100vh;
+}
+.text_of_first_screen {
+  width: 70%;
+  margin-left: 10%;
+  //   height: 45%;
+  position: relative;
+  top: 170px;
+}
+.Heading {
+  // font-family: "Poppins";
+  font-size: 55px;
+  width: 179px;
+  margin-bottom: 5%;
+  height: 77px;
+}
+.para {
+  top: 612px;
+  left: 175px;
+  width: 95%;
+  height: 207px;
+}
