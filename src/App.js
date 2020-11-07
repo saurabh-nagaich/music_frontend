@@ -6,6 +6,8 @@ import './App.css';
 import Home from "./component/Home"
 import Footer from './component/main/Footer';
 import Nav from './component/main/Nav';
+import Sign_up from './component/main/Sign_up';
+// import Test from './component/main/Test';
 import store from './redux/store';
 
 function App() {
@@ -13,13 +15,18 @@ function App() {
       <Provider store={store} >
         <Router>
           <div className="App">
-            <Nav />
+            <Sign_up />
+
+            {/* <Nav />
             <Switch>
               <Route path="/" exact component={Home} />
-              {/* <Route path="/about"  component={About} /> */}
-            </Switch>
+              <Route path="/sign_up" exact component={Sign_up} />
+              <Route path="/sign_up" exact component={Sign_up} />
+              <Route path="/test" exact component={Test} />
+              <Route path="/about"  component={About} />
+            </Switch> */}
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </Provider>
   );

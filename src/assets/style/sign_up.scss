@@ -1,0 +1,245 @@
+.contener {
+  display: flex;
+  height: 100vh;
+  color: rgba(139, 139, 139, 0.438);
+  // border: 1px solid blue;
+}
+.sign_up_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 80px;
+  // justify-content: space-evenly;
+}
+.Sign_up_left {
+  position: relative;
+  height: 100%;
+  width: 64%;
+  color: #333;
+  background: #f3f3f3;
+  z-index: -4;
+}
+.Sign_up_right {
+  // background: #ececec;
+  //   justify-content: center;
+  background-color: #e0e0e0;
+
+  position: relative;
+  width: 36%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#bg_shap {
+  position: relative;
+  width: 585px;
+  height: 540px;
+  top: -45px;
+  left: -80px;
+  z-index: -2;
+}
+
+#lets_Connect {
+  position: absolute;
+  // font-size: 2em;
+  top: 80px;
+  left: 190px;
+  width: 400px;
+  z-index: 2;
+}
+#connect_image {
+  position: absolute;
+  top: 245px;
+  left: 45px;
+  width: 860px;
+}
+//////////@
+.sign_up_box {
+  position: relative;
+  // top: 200px;
+}
+.sign_up_heading {
+  // width: 100px;
+  // height: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #000000d0;
+  margin-bottom: 75px;
+  // letter-spacing: 1px;
+}
+.input_area {
+  width: 150px;
+  height: 45px;
+  background: #e0e0e0;
+  padding: 1px 71px;
+  // border-radius: 25px;
+  border: 1px solid #b3b3b331;
+  border-bottom: 1px solid rgba(252, 250, 250, 0.418);
+
+  border-radius: 40px;
+  overflow: hidden;
+  outline: none;
+  overflow: hidden;
+  // -moz-box-shadow: inset 0 0 10px #cfcfcf;
+  // -webkit-box-shadow: inset 0 0 10px #cfcfcf;
+
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  transition: 0.1s ease-in-out;
+  // scroll-behavior: smooth;
+
+  &:focus + div {
+    // font-size: 100px;
+    transition: 0.1s ease-in;
+    label {
+      position: relative;
+      // top: -26px;
+      transform: translateY(-26px);
+      font-size: 10px;
+      left: -10px;
+      background: #e0e0e0;
+      color: #00000079;
+    }
+  }
+}
+.stop {
+  position: relative;
+  // top: -26px;
+  transform: translateY(-26px);
+  font-size: 10px;
+  left: -10px;
+  background: #e0e0e0;
+  color: #00000079;
+}
+
+.input {
+  div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 20px;
+    transform: translateY(-40px);
+    pointer-events: none;
+  }
+}
+
+#icon {
+  font-size: 30px;
+  color: rgba(80, 80, 80, 0.76);
+  margin-right: 20px;
+}
+
+.signUp_btn {
+  font-family: "Poppins" sans-serif;
+  // width: 69px;
+  font-size: 16px;
+  font-weight: bold;
+  // margin-right: 25px;
+  padding: 5px 25px;
+  border: none;
+  box-shadow: 3px 3px 4px #9292928f;
+  border-top: 1px solid rgba(255, 255, 255, 0.438);
+  border-left: 1px solid rgba(255, 255, 255, 0.438);
+  //   border-left-style: outset;
+  border-radius: 25px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 12%;
+  cursor: pointer;
+
+  &:active {
+    background-color: #b8b8b8;
+    box-shadow: 3px 3px 4px #9292928f;
+    border-top: 1px solid rgba(255, 255, 255, 0.438);
+    border-left: 1px solid rgba(255, 255, 255, 0.438);
+  }
+}
+.login_link_line {
+  font-size: 12px;
+
+  span {
+    font-weight: bold;
+    color: #000000bb;
+  }
+}
+
+// .sign_up_bottom {
+//   display: flex;
+// }
+
+hr {
+  width: 110px;
+  outline: none;
+  outline: none;
+  border: 0.5px solid #9292924b;
+  padding: 0;
+  background: #92929225;
+  // color: #000000;
+}
+.sign_up_bottom {
+  position: relative;
+  margin: 10% auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.or {
+  color: #000000ad;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+// // .icon {
+// //   position: relative;
+// //   transform: translateX(-40px);
+// // }
+// ////////////////////////////////////////////
+// // .input {
+// //   width: 500px;
+// //   margin: 10px 3%;
+// //   position: relative;
+// // }
+// .input_area {
+//   border-radius: 25px;
+// }
+// :focus {
+//   outline: none;
+// }
+// input[type="text"] {
+//   font: 15px/24px "Lato", Arial, sans-serif;
+//   color: #333;
+//   width: 400px;
+//   //   box-sizing: border-box;
+//   //   border-radius: 22px;
+//   letter-spacing: 1px;
+// }
+// .effect-20 {
+//   border: 1px solid #ccc;
+//   padding: 7px 14px;
+//   transition: 0.4s;
+//   background: transparent;
+// }
+
+// .effect-20 ~ label {
+//   position: absolute;
+//   left: 14px;
+//   width: 100%;
+//   top: 10px;
+//   color: #aaa;
+//   transition: 0.3s;
+//   z-index: -1;
+//   letter-spacing: 0.5px;
+// }
+// .effect-20:focus ~ label,
+// .has-content.effect-20 ~ label {
+//   top: -18px;
+//   left: 0;
+//   font-size: 12px;
+//   color: #aaa;
+//   transition: 0.3s;
+// }
