@@ -3,15 +3,36 @@
   height: 100vh;
   color: rgba(139, 139, 139, 0.438);
   // border: 1px solid blue;
+  background-color: transparent;
+  perspective: 1000px;
 }
-.sign_up_box {
+.sign_up_box,
+.sign_in_box {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   top: 80px;
-  // justify-content: space-evenly;
+  transform-style: preserve-3d;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
 }
+.sign_in_box {
+  // background-color: #2980b9;
+  top: 150px;
+  // color: white;
+  transform: rotateY(180deg);
+}
+.login_page {
+  transform: rotateY(360deg);
+}
+.sign_in {
+  transition: transform 0.6s;
+  transform: rotateY(180deg);
+}
+
 .Sign_up_left {
   position: relative;
   height: 100%;
@@ -88,13 +109,12 @@
 
   box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
     inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-  transition: 0.1s ease-in-out;
   // scroll-behavior: smooth;
 
   &:focus + div {
     // font-size: 100px;
-    transition: 0.1s ease-in;
     label {
+      transition: 0.2s linear;
       position: relative;
       // top: -26px;
       transform: translateY(-26px);
@@ -151,9 +171,9 @@
   cursor: pointer;
 
   &:active {
-    background-color: #b8b8b8;
-    box-shadow: 3px 3px 4px #9292928f;
-    border-top: 1px solid rgba(255, 255, 255, 0.438);
+    background-color: #d4d4d4cb;
+    box-shadow: 3px 3px 4px #f5f5f58f;
+    border-top: 1px solid rgba(145, 145, 145, 0.438);
     border-left: 1px solid rgba(255, 255, 255, 0.438);
   }
 }
@@ -163,6 +183,7 @@
   span {
     font-weight: bold;
     color: #000000bb;
+    cursor: pointer;
   }
 }
 
@@ -194,52 +215,94 @@ hr {
   font-weight: bold;
 }
 
-// // .icon {
-// //   position: relative;
-// //   transform: translateX(-40px);
-// // }
-// ////////////////////////////////////////////
-// // .input {
-// //   width: 500px;
-// //   margin: 10px 3%;
-// //   position: relative;
-// // }
-// .input_area {
-//   border-radius: 25px;
-// }
-// :focus {
-//   outline: none;
-// }
-// input[type="text"] {
-//   font: 15px/24px "Lato", Arial, sans-serif;
-//   color: #333;
-//   width: 400px;
-//   //   box-sizing: border-box;
-//   //   border-radius: 22px;
-//   letter-spacing: 1px;
-// }
-// .effect-20 {
-//   border: 1px solid #ccc;
-//   padding: 7px 14px;
-//   transition: 0.4s;
-//   background: transparent;
-// }
+////////////////////////////////////////////
+//////////////////////////////////////////////
+///////////////////////////////////////////
 
-// .effect-20 ~ label {
-//   position: absolute;
-//   left: 14px;
-//   width: 100%;
-//   top: 10px;
-//   color: #aaa;
-//   transition: 0.3s;
-//   z-index: -1;
-//   letter-spacing: 0.5px;
-// }
-// .effect-20:focus ~ label,
-// .has-content.effect-20 ~ label {
-//   top: -18px;
-//   left: 0;
-//   font-size: 12px;
-//   color: #aaa;
-//   transition: 0.3s;
-// }
+@media only screen and (max-width: 1025px) {
+  #bg_shap {
+    width: 490px;
+    height: 510px;
+    top: -50px;
+    left: -70px;
+  }
+
+  #lets_Connect {
+    top: 110px;
+    left: 170px;
+    width: 360px;
+  }
+  #connect_image {
+    top: 255px;
+    left: 8px;
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .Sign_up_left {
+    width: 63%;
+  }
+  .Sign_up_right {
+    width: 37%;
+  }
+
+  #bg_shap {
+    // position: relative;
+    width: 350px;
+    height: 540px;
+    top: -130px;
+    left: -50px;
+  }
+
+  #lets_Connect {
+    top: 130px;
+    left: 125px;
+    width: 245px;
+  }
+  #connect_image {
+    top: 300px;
+    left: 10px;
+    width: 460px;
+  }
+  //////////@
+  .input {
+    div {
+      left: 20px;
+      transform: translateY(-30px);
+    }
+  }
+  #icon {
+    font-size: 22px;
+  }
+  .sign_up_heading {
+    font-size: 22px;
+  }
+  .input_area {
+    width: 90px;
+    height: 35px;
+  }
+
+  hr {
+    width: 95px;
+  }
+
+  .or {
+    font-size: 18px;
+  }
+  .sign_up_bottom {
+    top: 10px;
+  }
+  .sign_up_box {
+    top: 100px;
+  }
+}
+
+// moblie
+@media only screen and (max-width: 426px) {
+}
+@media only screen and (max-width: 376px) {
+}
+@media only screen and (max-width: 320px) {
+}
+// max 1440 x 785
