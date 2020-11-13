@@ -1,3 +1,6 @@
 export {buyCake} from "./cake/cakeAction"
 export {buyIceCream} from "./iceCream/iceCrameAction"
 export * from "./userData/userAction"
+export * from "./login/loginAction"
+// export {loader_Start,loader_Stop} from "./loader/loaderAction"
+export * from "./signUp/sign_upAction"

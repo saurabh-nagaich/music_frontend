@@ -8,13 +8,15 @@ import "./../../assets/style/sign_up.scss"
 import letsLink from "./../../assets/images/Lets_Connect.svg"
 import imageLink from "./../../assets/images/Group_13.svg"
 import iconOShap from "./../../assets/images/Path_442.svg"
+import { createNewUser, login } from '../../redux';
+import { connect } from 'react-redux';
 
 
-function Sign_up() {
+function Sign_up(props) {
     
     const [userName,setUserName] = useState("")
     const [email,setEmail] = useState("")
-    const [password,setPassword] = useState()
+    const [password,setPassword] = useState("")
     
     const [sign_page,setPage] = useState("sign_up")
     // console.log(userName,email,password)
@@ -27,25 +29,26 @@ function Sign_up() {
                 password
             }
             console.log(obj)
+            props.signup_Fun(obj);
+            setUserName(()=>"");
+            setEmail(()=>"");
+            setPassword(()=>"")
     
         }
-        setUserName(()=>"");
-        setEmail(()=>"");
-        setPassword(()=>null)
     }
     const sign_In = () =>{
         if((userName||email) && password){
             const obj={
-                userName ,
+                userName,
                 email,
                 password
             }
             console.log(obj)
-    
+            props.login_Fun(obj); 
         }
         setUserName(()=>"");
         setEmail(()=>"");
-        setPassword(()=>null)
+        setPassword(()=>"")
     }
 
     return (
@@ -61,7 +64,7 @@ function Sign_up() {
                     <div className={`sign_up_box ${sign_page}` }>
                         <div className="sign_up_heading">Sign Up</div>
                         <div class="input ">
-                            <input class="input_area" type="text" placeholder="" onChange={e=>setUserName(e.target.value)} />
+                            <input class="input_area" type="text" placeholder="" value={userName} onChange={e=>setUserName(e.target.value)} />
                             <div >
                                 <span class="icon">
                                         <SupervisorAccountIcon id="icon"/>
@@ -98,7 +101,7 @@ function Sign_up() {
                     <div className={`sign_in_box  ${sign_page === "sign_up"?null:"login_page"}`}>
                         <div className="sign_up_heading">Sign In</div>
                         <div class="input ">
-                            <input class="input_area" type="text" placeholder="" onChange={e=>setUserName(e.target.value)} />
+                            <input class="input_area" type="text" placeholder="" value={userName} onChange={e=>setUserName(e.target.value)} />
                             <div >
                                 <span class="icon">
                                         <SupervisorAccountIcon id="icon"/>
@@ -107,12 +110,12 @@ function Sign_up() {
                             </div>
                         </div>
                         <div class="input ">
-                            <input class="input_area" type="text" placeholder="" onChange={e=>setPassword(e.target.value)} />
+                            <input class="input_area" type="password" value={password} placeholder="" onChange={e=>setPassword(e.target.value)} />
                             <div >
                                 <span class="icon">
                                     <VpnKeyOutlinedIcon id="icon" />
                                 </span>
-                                <label className={`label ${userName?"stop":null} `}>Password</label>
+                                <label className={`label ${password?"stop":null} `}>Password</label>
                             </div>
                         </div>
                         <div className="signUp_btn" onClick={sign_In} >Sign In</div>
@@ -125,4 +128,18 @@ function Sign_up() {
     )
 }
 
-export default Sign_up
+const mapStateToProps=state=>{
+    return {
+        login_status:state.login,
+        signup_status_status:state.signup,
+    }
+}
+
+const mapDispatchToProps=dispatch=>{
+    return {
+        login_Fun:()=>dispatch(login()),
+        signup_Fun:()=>dispatch(createNewUser()),
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Sign_up)

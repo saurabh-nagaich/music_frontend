@@ -17,13 +17,10 @@ function App() {
           <div className="App">
             <Sign_up />
 
-            {/* <Nav />
-            <Switch>
+            {/* <Nav /> */}
+            {/* <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/sign_up" exact component={Sign_up} />
-              <Route path="/sign_up" exact component={Sign_up} />
-              <Route path="/test" exact component={Test} />
-              <Route path="/about"  component={About} />
             </Switch> */}
           </div>
           {/* <Footer /> */}
