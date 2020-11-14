@@ -25,3 +25,18 @@
   // border-radius: 25px;
   // text-align: center;
 }
+.nav_image {
+  position: relative;
+  opacity: 0;
+  animation: fadein 0.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

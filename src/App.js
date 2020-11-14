@@ -2,6 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route,  Switch } from 'react-router-dom';
 import './App.css';
+import './assets/style/color.scss';
 // import About from './component/About';
 import Home from "./component/Home"
 import Footer from './component/main/Footer';
@@ -15,15 +16,15 @@ function App() {
       <Provider store={store} >
         <Router>
           <div className="App">
-            <Sign_up />
+            {/* <Sign_up /> */}
 
-            {/* <Nav /> */}
-            {/* <Switch>
+            <Nav />
+            <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/sign_up" exact component={Sign_up} />
-            </Switch> */}
+            </Switch>
           </div>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       </Provider>
   );
