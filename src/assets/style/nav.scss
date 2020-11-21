@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 4px 35px;
-  background: #ececec;
-  box-shadow: 3px 3px 4px #00000029;
+  // background: #ececec;
+  box-shadow: 3px 3px 4px var(--box_shadow);
 }
 .nav_right {
   display: flex;
@@ -15,15 +15,7 @@
   width: 69px;
   margin-right: 25px;
   padding: 5px 15px;
-  color: #000000;
-  // font-family: "Poppins" sans-serif;
-  // border: none;
-  // box-shadow: 3px 3px 4px #9292928f;
-  // border-top: 1px solid rgba(255, 255, 255, 0.438);
-  // border-left: 1px solid rgba(255, 255, 255, 0.438);
-  //   border-left-style: outset;
-  // border-radius: 25px;
-  // text-align: center;
+  color: var(--text_color);
 }
 .nav_image {
   position: relative;

@@ -1,17 +1,17 @@
 .footer {
   display: flex;
   flex-direction: column;
-  //   width: 100%;
   padding: 50px 5%;
-  background: #d8d7d7;
-  box-shadow: 100px #00000029;
+  background: var(--footer_background);
   padding-bottom: 2%;
+  // box-shadow: 100px #00000029;
+  //   width: 100%;
 }
 .footer_about {
   font-size: 40px;
   width: 179px;
-  //   margin-bottom: 5%;
   height: 70px;
+  //   margin-bottom: 5%;
 }
 .footer_row_2 {
   display: flex;

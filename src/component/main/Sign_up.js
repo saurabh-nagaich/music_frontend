@@ -90,7 +90,7 @@ function Sign_up(props) {
                                 <label className={`label ${password?"stop":null} `}>Password</label>
                             </div>
                         </div>
-                        <div className="signUp_btn" onClick={sign_up} >Sign up</div>
+                        <div className="signUp_btn btn" onClick={sign_up} >Sign up</div>
                         <div className="login_link_line">Already have an account ? <span className="log" onClick={()=>sign_page==="sign_in"?setPage(""):setPage("sign_in")}>Log in</span></div>
                         <div className="sign_up_bottom">
                             <hr />
@@ -118,7 +118,7 @@ function Sign_up(props) {
                                 <label className={`label ${password?"stop":null} `}>Password</label>
                             </div>
                         </div>
-                        <div className="signUp_btn" onClick={sign_In} >Sign In</div>
+                        <div className="signUp_btn btn" onClick={sign_In} >Sign In</div>
                         <div className="login_link_line">create new account ? <span className="log" onClick={()=>sign_page==="sign_up"?setPage(""):setPage("sign_up")}>Sign Up</span></div>                            
                     </div>
                     

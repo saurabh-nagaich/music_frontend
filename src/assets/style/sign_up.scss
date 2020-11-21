@@ -1,10 +1,10 @@
 .contener {
   display: flex;
   height: 100vh;
-  color: rgba(139, 139, 139, 0.438);
-  // border: 1px solid blue;
+  color: var(--sign_lable_color);
   background-color: transparent;
   perspective: 1000px;
+  // border: 1px solid blue;
 }
 .sign_up_box,
 .sign_in_box {
@@ -37,15 +37,14 @@
   position: relative;
   height: 100%;
   width: 64%;
-  color: #333;
-  background: #f3f3f3;
+  // color: #333;
+  // background: #f3f3f3;
   z-index: -4;
 }
 .Sign_up_right {
   // background: #ececec;
   //   justify-content: center;
-  background-color: #e0e0e0;
-
+  background-color: var(--sign_right_background);
   position: relative;
   width: 36%;
   height: 100%;
@@ -87,18 +86,18 @@
   // height: 20px;
   font-size: 30px;
   font-weight: bolder;
-  color: #000000d0;
+  color: var(--sign_heading_color);
   margin-bottom: 75px;
   // letter-spacing: 1px;
 }
 .input_area {
   width: 150px;
   height: 45px;
-  background: #e0e0e0;
-  padding: 1px 71px;
+  background: var(--sign_right_background);
+  padding: 1px 80px;
   // border-radius: 25px;
-  border: 1px solid #b3b3b331;
-  border-bottom: 1px solid rgba(252, 250, 250, 0.418);
+  border: 1px solid var(--sign_input_border);
+  border-bottom: 1px solid var(--sign_input_border_bottom);
 
   border-radius: 40px;
   overflow: hidden;
@@ -107,8 +106,8 @@
   // -moz-box-shadow: inset 0 0 10px #cfcfcf;
   // -webkit-box-shadow: inset 0 0 10px #cfcfcf;
 
-  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: inset 6px 6px 10px 0 var(--box_inner_shadom_top),
+    inset -6px -6px 10px 0 var(--box_inner_shadom_bottom);
   // scroll-behavior: smooth;
 
   &:focus + div {
@@ -120,19 +119,20 @@
       transform: translateY(-26px);
       font-size: 10px;
       left: -10px;
-      background: #e0e0e0;
-      color: #00000079;
+      background: var(--sign_right_background);
+      color: var(--sign_palceholder_color);
     }
   }
 }
 .stop {
   position: relative;
-  // top: -26px;
   transform: translateY(-26px);
   font-size: 10px;
   left: -10px;
-  background: #e0e0e0;
-  color: #00000079;
+  background: var(--sign_right_background);
+  color: var(--sign_palceholder_color);
+  // top: -26px;
+  // color: #00000079;
 }
 
 .input {
@@ -140,7 +140,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    left: 20px;
+    left: 10px;
     transform: translateY(-40px);
     pointer-events: none;
   }
@@ -148,41 +148,41 @@
 
 #icon {
   font-size: 30px;
-  color: rgba(80, 80, 80, 0.76);
-  margin-right: 20px;
+  color: var(--icon);
+  margin-right: 5px;
 }
 
 .signUp_btn {
-  font-family: "Poppins" sans-serif;
-  // width: 69px;
+  width: 69px;
   font-size: 16px;
   font-weight: bold;
-  // margin-right: 25px;
-  padding: 5px 25px;
-  border: none;
-  box-shadow: 3px 3px 4px #9292928f;
-  border-top: 1px solid rgba(255, 255, 255, 0.438);
-  border-left: 1px solid rgba(255, 255, 255, 0.438);
-  //   border-left-style: outset;
-  border-radius: 25px;
   text-align: center;
-  color: #000000;
+  color: var(--sign_heading_color);
   margin-bottom: 12%;
   cursor: pointer;
+  // font-family: "Poppins" sans-serif;
+  // margin-right: 25px;
+  // padding: 5px 25px;
+  // border: none;
+  // box-shadow: 3px 3px 4px #9292928f;
+  // border-top: 1px solid rgba(255, 255, 255, 0.438);
+  // border-left: 1px solid rgba(255, 255, 255, 0.438);
+  //   border-left-style: outset;
+  // border-radius: 25px;
 
-  &:active {
-    background-color: #d4d4d4cb;
-    box-shadow: 3px 3px 4px #f5f5f58f;
-    border-top: 1px solid rgba(145, 145, 145, 0.438);
-    border-left: 1px solid rgba(255, 255, 255, 0.438);
-  }
+  // &:active {
+  //   background-color: #d4d4d4cb;
+  //   box-shadow: 3px 3px 4px #f5f5f58f;
+  //   border-top: 1px solid rgba(145, 145, 145, 0.438);
+  //   border-left: 1px solid rgba(255, 255, 255, 0.438);
+  // }
 }
 .login_link_line {
   font-size: 12px;
 
   span {
     font-weight: bold;
-    color: #000000bb;
+    color: var(--sign_heading_color);
     cursor: pointer;
   }
 }
@@ -195,9 +195,9 @@ hr {
   width: 110px;
   outline: none;
   outline: none;
-  border: 0.5px solid #9292924b;
+  border: 0.5px solid var(--box_shadow);
   padding: 0;
-  background: #92929225;
+  background: var(--box_shadow);
   // color: #000000;
 }
 .sign_up_bottom {
@@ -210,7 +210,7 @@ hr {
 }
 
 .or {
-  color: #000000ad;
+  color: var(--sign_heading_color);
   font-size: 20px;
   font-weight: bold;
 }
