@@ -3,10 +3,14 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import EmailSharpIcon from '@material-ui/icons/EmailSharp';
 import VpnKeyOutlinedIcon from '@material-ui/icons/VpnKeyOutlined';
 
+import emailImg from "./../../assets/images/gmail.svg"
+import passwordImg from "./../../assets/images/password.svg"
+import user from "./../../assets/images/user.svg"
+
 import "./../../assets/style/sign_up.scss"
 
 import letsLink from "./../../assets/images/Lets_Connect.svg"
-import imageLink from "./../../assets/images/Group_13.svg"
+import imageLink from "./../../assets/images/SignUp.svg"
 import iconOShap from "./../../assets/images/Path_442.svg"
 import { createNewUser, login } from '../../redux';
 import { connect } from 'react-redux';
@@ -67,7 +71,8 @@ function Sign_up(props) {
                             <input class="input_area" type="text" placeholder="" value={userName} onChange={e=>setUserName(e.target.value)} />
                             <div >
                                 <span class="icon">
-                                        <SupervisorAccountIcon id="icon"/>
+                                    <img src={user} id="image_icon" />
+                                        {/* <SupervisorAccountIcon id="icon"/> */}
                                 </span>
                                 <label className={`label ${userName?"stop":null} `}>User Name</label>
                             </div>
@@ -76,7 +81,8 @@ function Sign_up(props) {
                             <input class="input_area" type="email" value={email}  placeholder="" onChange={e=>setEmail(e.target.value)} />
                             <div >
                                 <span class="icon">
-                                        <EmailSharpIcon  id="icon" />
+                                    <img src={emailImg} id="image_icon" />
+                                        {/* <EmailSharpIcon  id="icon" /> */}
                                 </span>
                                 <label className={`label ${email?"stop":null} `}>Email</label>
                             </div>
@@ -85,7 +91,9 @@ function Sign_up(props) {
                             <input class="input_area" type="password" value={password} placeholder="" onChange={e=>setPassword(e.target.value)} />
                             <div >
                                 <span class="icon">
-                                    <VpnKeyOutlinedIcon id="icon" />
+                                    <img src={passwordImg} id="image_icon" />
+
+                                    {/* <VpnKeyOutlinedIcon id="icon" /> */}
                                 </span>
                                 <label className={`label ${password?"stop":null} `}>Password</label>
                             </div>
@@ -104,7 +112,8 @@ function Sign_up(props) {
                             <input class="input_area" type="text" placeholder="" value={userName} onChange={e=>setUserName(e.target.value)} />
                             <div >
                                 <span class="icon">
-                                        <SupervisorAccountIcon id="icon"/>
+                                    <img src={user} id="image_icon" />
+                                        {/* <SupervisorAccountIcon id="icon"/> */}
                                 </span>
                                 <label className={`label ${userName?"stop":null} `}>User Name</label>
                             </div>
@@ -113,7 +122,8 @@ function Sign_up(props) {
                             <input class="input_area" type="password" value={password} placeholder="" onChange={e=>setPassword(e.target.value)} />
                             <div >
                                 <span class="icon">
-                                    <VpnKeyOutlinedIcon id="icon" />
+                                    <img src={passwordImg} id="image_icon" />
+                                    {/* <VpnKeyOutlinedIcon id="icon" /> */}
                                 </span>
                                 <label className={`label ${password?"stop":null} `}>Password</label>
                             </div>

@@ -1,17 +1,25 @@
+.back {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  animation: backgroundEffect 2.5s ease-in-out forwards;
+  // animation-delay: 1.5s;
+}
+
 .effect_first_screen {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   z-index: 98;
-  //   width: ;
 }
 .effect_box {
-  position: absolute;
+  position: fixed;
   top: 20%;
   width: 100%;
-  background: var(--background);
+  // background: var(--background);
   height: 60vh;
   z-index: 98;
   animation: fadeout 2s ease-in-out forwards;
@@ -74,6 +82,8 @@
   }
   100% {
     top: -25px;
+    // //////
+    left: 15px;
     transform: rotate(-0deg);
   }
 }
@@ -88,8 +98,10 @@
   }
   100% {
     width: 50px;
+    // left: 10px;
+
     // top: 20px;
-    transform: translateX(85px);
+    transform: translateX(65px);
   }
 }
 @keyframes headphoneMove {
@@ -143,7 +155,17 @@
     background: none;
   }
 }
-
+@keyframes backgroundEffect {
+  0%,
+  80% {
+    background: var(--background);
+    overflow: hidden;
+  }
+  100% {
+    overflow: hidden;
+    background: none;
+  }
+}
 ////////////////////////////////////////////
 //////////////////////////////////////////////
 ///////////////////////////////////////////
@@ -170,7 +192,7 @@
       opacity: 0.2;
     }
     100% {
-      top: -330px;
+      top: -340px;
       left: -690px;
       // transform: translateY(-300px);
       opacity: 0;
@@ -192,7 +214,7 @@
       opacity: 0.2;
     }
     100% {
-      top: -305px;
+      top: -320px;
       left: -690px;
       opacity: 0;
     }
@@ -221,7 +243,7 @@
       opacity: 0.2;
     }
     100% {
-      top: -250px;
+      top: -260px;
       left: -480px;
       // transform: translateY(-300px);
       opacity: 0;
@@ -243,7 +265,7 @@
       opacity: 0.2;
     }
     100% {
-      top: -230px;
+      top: -240px;
       left: -480px;
       opacity: 0;
     }

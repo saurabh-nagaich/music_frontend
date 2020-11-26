@@ -4,7 +4,7 @@
   align-items: center;
   padding: 4px 35px;
   // background: #ececec;
-  box-shadow: 3px 3px 4px var(--box_shadow);
+  // box-shadow: 3px 3px 4px var(--box_shadow);
 }
 .nav_right {
   display: flex;
@@ -16,6 +16,8 @@
   margin-right: 25px;
   padding: 5px 15px;
   color: var(--text_color);
+  font-weight: 600;
+  font-size: small;
 }
 .nav_image {
   position: relative;

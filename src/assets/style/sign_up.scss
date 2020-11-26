@@ -73,8 +73,8 @@
 #connect_image {
   position: absolute;
   top: 245px;
-  left: 45px;
-  width: 860px;
+  left: 200px;
+  width: 740px;
 }
 //////////@
 .sign_up_box {
@@ -146,12 +146,18 @@
   }
 }
 
-#icon {
-  font-size: 30px;
-  color: var(--icon);
-  margin-right: 5px;
-}
+// #icon {
+//   font-size: 10px;
+//   color: var(--icon);
+//   margin-right: 5px;
+// }
+#image_icon{
+  height: 20px;
+  margin: auto 20px;
+  // color: var(--icon);
+  transform: translateY(4px);
 
+}
 .signUp_btn {
   width: 69px;
   font-size: 16px;
@@ -233,7 +239,7 @@ hr {
     width: 360px;
   }
   #connect_image {
-    top: 255px;
+    top: 420px;
     left: 8px;
     width: 640px;
   }
@@ -261,7 +267,7 @@ hr {
     width: 245px;
   }
   #connect_image {
-    top: 300px;
+    top: 350px;
     left: 10px;
     width: 460px;
   }
@@ -272,8 +278,12 @@ hr {
       transform: translateY(-30px);
     }
   }
-  #icon {
-    font-size: 22px;
+  // #icon {
+  //   font-size: 22px;
+  // }
+  #image_icon{
+    height: 18px;
+    transform: translateY(3px);
   }
   .sign_up_heading {
     font-size: 22px;

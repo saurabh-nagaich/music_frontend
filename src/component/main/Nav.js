@@ -20,8 +20,9 @@ function Nav() {
                     <img className="nav_image" style={style} src={headIcon} />
                 </div>
                 <div className="nav_right">
+                    <div className="nav_item btn ">Features</div>
                     <div className="nav_item btn ">About</div>
-                    <div className="nav_item btn ">Sign up</div>
+                    <div className="nav_item btn btn_border">Sign up</div>
                 </div>
             </div>
         </div>
