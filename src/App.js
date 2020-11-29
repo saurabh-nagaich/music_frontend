@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route,  Switch } from 'react-router-dom';
 import './App.css';
 import './assets/style/color.scss';
+import Slider from './component/fisrtScreen/slider/Slider';
 // import About from './component/About';
 import Home from "./component/Home"
 import Footer from './component/main/Footer';
@@ -17,6 +18,7 @@ function App() {
         <Router>
           <div className="App">
             {/* <Sign_up /> */}
+            {/* <Slider /> */}
 
             <Nav />
             <Switch>

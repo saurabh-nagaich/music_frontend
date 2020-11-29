@@ -7,6 +7,7 @@ import M from "./../assets/images/M.svg";
 import HeadPhone from "./../assets/images/head_phone.svg";
 import SICO from "./../assets/images/SICO.svg";
 import WhyWeUse from './fisrtScreen/WhyWeUse';
+import Slider from './fisrtScreen/slider/Slider';
 
 function Home() {
     return (
@@ -23,7 +24,8 @@ function Home() {
             </div>
             </div>
             <WhyWeUse />
-            <FirstScreen />
+            <Slider />
+            {/* <FirstScreen /> */}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from "./../../assets/images/team at work-solid.svg"
+import image1 from "./../../assets/images/slider_img.svg"
 import "./../../assets/style/firstScreen.scss"
 
 function FirstScreen() {
