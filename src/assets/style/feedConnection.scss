@@ -1,0 +1,79 @@
+.connection_List {
+  max-height: 81vh;
+  overflow: scroll;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+  }
+}
+.connection_box {
+  margin: 5px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+  width: 348px;
+  outline: none;
+  box-shadow: inset 6px 6px 10px 0 var(--box_inner_shadom_top),
+    inset -6px -6px 10px 0 var(--box_inner_shadom_bottom);
+  // scroll-behavior: smooth;
+}
+
+.user_title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.connection_user {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+.connection_profile_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+#connection_item {
+  margin: 2px 0px;
+}
+
+.text_part {
+  display: flex;
+  align-items: center;
+}
+.connection_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  margin-left: 80px;
+  width: 100px;
+  height: 33px;
+  border-radius: 10px;
+  text-align: center;
+  background-image: linear-gradient(to right, #ff4b4b, #0077ff);
+}
+
+.feed_connection_profile_title {
+  color: var(--text_color);
+  font-size: 12px;
+  font-weight: 900;
+  //   height: 10px;
+}
+.connection_btn_text {
+  color: #e8e8e8;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+// .connection_btn_icon {
+//   border-radius: 20px;
+// }
+// .btn_grid {
+//   background-image: linear-gradient(to right, #ff4b4b, #0077ff);
+// }

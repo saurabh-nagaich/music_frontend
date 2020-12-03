@@ -10,9 +10,12 @@ import store from './redux/store';
 // components
 import Home from "./component/Home"
 import Sign_up from './component/main/Sign_up';
-import FeedProfilePage from './component/main/FeedProfilePage';
+
+import FeedPage from './component/main/FeedPage';
+import FeedConnectionList from './component/main/FeedConnectionList';
 
 
+// import FeedPost from './component/main/FeedPost';
 // import Slider from './component/fisrtScreen/slider/Slider';
 // import About from './component/About';
 // import Footer from './component/main/Footer';
@@ -24,7 +27,9 @@ function App() {
       <Provider store={store} >
         <Router>
           <div className="App">
-            <FeedProfilePage />
+            <FeedPage />
+
+            {/* <FeedConnectionList /> */}
 
             {/* <Switch>
               <Route path="/" exact component={Home} />
