@@ -17,6 +17,9 @@
   width: 500px;
 }
 
+#heading_title {
+  position: relative;
+}
 #puzzal {
   position: relative;
   padding: 10px 20px;
@@ -34,21 +37,116 @@
 }
 #rock_band {
   position: relative;
-  height: 400px;
-  left: 50px;
-  top: -5px;
+  height: 450px;
+  left: 80px;
+  top: 10px;
   transform: rotate(-90deg);
 }
 
 @media only screen and (max-width: 2565px) {
 }
 @media only screen and (max-width: 1445px) {
+  .silder_text_area {
+    padding: 120px 0px;
+    padding-left: 60px;
+    top: -100px;
+    // z-index: 999;
+  }
+  #heading_title {
+    // margin-bottom: 50px;
+    top: 8px;
+  }
+
+  #PARAGRA {
+    width: 580px;
+  }
+  #puzzal {
+    padding: 0px 0px;
+    height: 250px;
+    left: -30px;
+    top: 90px;
+  }
+
+  #ticket {
+    height: 350px;
+    left: 120px;
+    top: 20px;
+  }
+  #rock_band {
+    height: 500px;
+    left: 130px;
+    top: -40px;
+  }
 }
 
 @media only screen and (max-width: 1025px) {
+  .silder_text_area {
+    position: relative;
+    padding: 120px 0px;
+    padding-left: 60px;
+    top: -100px;
+    // z-index: 999;
+  }
+  #heading_title {
+    position: relative;
+    margin-bottom: 12px;
+    top: 8px;
+  }
+
+  #PARAGRA {
+    width: 450px;
+  }
+  #puzzal {
+    padding: 0px 0px;
+    height: 150px;
+    left: 50px;
+    top: 80px;
+  }
+
+  #ticket {
+    height: 250px;
+    left: 80px;
+    top: -10px;
+  }
+  #rock_band {
+    height: 400px;
+    left: 80px;
+    top: -60px;
+  }
 }
 
 @media only screen and (max-width: 769px) {
+  .silder_text_area {
+    padding: 175px 45px;
+    top: -160px;
+  }
+  #heading_title {
+    position: relative;
+    margin-bottom: 12px;
+    top: 25px;
+  }
+  #PARAGRA {
+    width: 300px;
+  }
+
+  #puzzal {
+    padding: 0px 0px;
+    height: 120px;
+    left: -125px;
+    top: 60px;
+  }
+
+  #ticket {
+    height: 190px;
+    left: -70px;
+    top: 10px;
+    transform: rotate(-90deg);
+  }
+  #rock_band {
+    height: 300px;
+    left: -70px;
+    top: -50px;
+  }
 }
 
 // moblie

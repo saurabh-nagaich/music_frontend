@@ -10,7 +10,7 @@ function ImgComp({src,id}){
     return (
         <div className="slider_slide">
             <div className="silder_text_area section">
-                <div className="heading" style={{"font-weight":"bold"}}>Collab</div>
+                <div className="heading Heading" id="heading_title" style={{"font-weight":"bold"}}>Collab</div>
                 <div className="paragraf para" id="PARAGRA">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, exercitationem. Officia, quo error cupiditate aperiam numquam quas dolore ea placeat ad similique nisi voluptatum veritatis laborum iusto. Provident, tenetur. Quaerat.
                 </div>

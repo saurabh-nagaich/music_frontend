@@ -44,7 +44,7 @@ function Slider(){
     
     
     useEffect(()=>{
-        console.log(x)
+        // console.log(x)
         if( x==-100){
             setCircle("two")
         }else if(x==-200){

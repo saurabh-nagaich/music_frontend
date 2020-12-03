@@ -3,7 +3,8 @@
   height: 100vh;
   width: 100%;
   z-index: 4;
-  animation: backgroundEffect 2.5s ease-in-out forwards;
+  animation: backgroundEffect 2.5s ease-in-out forwards,
+    sendback 6s ease-in-out forwards;
   // animation-delay: 1.5s;
 }
 
@@ -62,6 +63,7 @@
     transform: scale(0);
     display: none;
     opacity: 0;
+    z-index: -9;
   }
 }
 
@@ -85,6 +87,7 @@
     // //////
     left: 15px;
     transform: rotate(-0deg);
+    z-index: -9;
   }
 }
 
@@ -102,6 +105,7 @@
 
     // top: 20px;
     transform: translateX(65px);
+    z-index: -9;
   }
 }
 @keyframes headphoneMove {
@@ -125,6 +129,7 @@
     left: -730px;
     // transform: translateY(-300px);
     opacity: 0;
+    z-index: -9;
   }
 }
 @keyframes mMove {
@@ -146,6 +151,7 @@
     top: -318px;
     left: -730px;
     opacity: 0;
+    z-index: -9;
   }
 }
 @keyframes fadeout {
@@ -153,17 +159,27 @@
   }
   100% {
     background: none;
+    z-index: -9;
   }
 }
 @keyframes backgroundEffect {
   0%,
-  80% {
+  80%,
+  90% {
     background: var(--background);
     overflow: hidden;
   }
   100% {
     overflow: hidden;
     background: none;
+  }
+}
+@keyframes sendback {
+  0%,
+  80% {
+  }
+  100% {
+    z-index: -9;
   }
 }
 ////////////////////////////////////////////
@@ -192,7 +208,7 @@
       opacity: 0.2;
     }
     100% {
-      top: -420px;
+      top: -470px;
       left: -690px;
       // transform: translateY(-300px);
       opacity: 0;
@@ -214,7 +230,7 @@
       opacity: 0.2;
     }
     100% {
-      top: -395px;
+      top: -450px;
       left: -690px;
       opacity: 0;
     }
@@ -243,8 +259,8 @@
       opacity: 0.2;
     }
     100% {
-      top: -300px;
-      left: -480px;
+      top: -420px;
+      left: -482px;
       // transform: translateY(-300px);
       opacity: 0;
     }
@@ -265,8 +281,8 @@
       opacity: 0.2;
     }
     100% {
-      top: -280px;
-      left: -480px;
+      top: -400px;
+      left: -482px;
       opacity: 0;
     }
   }

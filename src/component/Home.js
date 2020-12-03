@@ -8,6 +8,8 @@ import HeadPhone from "./../assets/images/head_phone.svg";
 import SICO from "./../assets/images/SICO.svg";
 import WhyWeUse from './fisrtScreen/WhyWeUse';
 import Slider from './fisrtScreen/slider/Slider';
+import Nav from './main/Nav';
+import Footer from './main/Footer';
 
 function Home() {
     return (
@@ -23,8 +25,12 @@ function Home() {
                 </div>
             </div>
             </div>
+            <Nav />
+
             <WhyWeUse />
             <Slider />
+
+            <Footer />
             {/* <FirstScreen /> */}
         </div>
     )
