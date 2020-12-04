@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background-color: #f1f3f6;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.soft-element {
+  background-color: #f1f3f6;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  border-radius: 14px;
+  box-shadow: 5px 5px 10px rgba(55, 55, 55, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.8),
+    inset -6px -6px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 5px 5px 10px rgba(55, 55, 55, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.8),
+    inset -6px -6px 10px rgba(255, 255, 255, 0.2);
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  display: inline-block;
+  margin: 0 2%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fab {
+  color: #e3e3e3;
+  font-size: 50px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-45%);
+  -webkit-transform: translateY(-45%);
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+}
+
+.soft-element:hover {
+  box-shadow: 1px 1px 5px rgba(55, 55, 55, 0.1),
+    -2px -2px 6px rgba(255, 255, 255, 0.9),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 1px 1px 5px rgba(55, 55, 55, 0.1),
+    -2px -2px 6px rgba(255, 255, 255, 0.9),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.2);
+}
+
+.soft-element:hover .fa-facebook-square {
+  color: #4267b2;
+}
+
+.soft-element:hover .fa-youtube-square {
+  color: #ff0000;
+}
+
+.soft-element:hover .fa-pinterest-square {
+  color: #bd081c;
+}
+
+a {
+  color: #b2b2b2;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateY(-80%) translateX(-50%);
+
+  -webkit-transform: translateY(-80%) translateX(-50%);
+}
+
+/////////////////////////////////////////////////////@at-root
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+
+button:hover:after {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  transition-duration: 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+button:active:after {
+  opacity: 0;
+}

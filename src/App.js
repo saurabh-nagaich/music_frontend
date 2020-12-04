@@ -13,6 +13,7 @@ import Sign_up from './component/main/Sign_up';
 
 import FeedPage from './component/main/FeedPage';
 import FeedConnectionList from './component/main/FeedConnectionList';
+import MainNav from './component/main/MainNav';
 
 
 // import FeedPost from './component/main/FeedPost';
@@ -27,7 +28,9 @@ function App() {
       <Provider store={store} >
         <Router>
           <div className="App">
-            <FeedPage />
+            {/* <FeedPage /> */}
+
+            <MainNav />
 
             {/* <FeedConnectionList /> */}
 
